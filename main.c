@@ -19,6 +19,9 @@ int main() {
 			case '>':
 				pos++;
 				break;
+			case '.':
+				printf("%d", array[pos]);
+				break;
 		}
 	}
 	return 0;
