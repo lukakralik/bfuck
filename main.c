@@ -25,6 +25,8 @@ int main() {
 			case '.':
 				printf("%d", itoa(array[pos]));
 				break;
+			case '\n': 
+				continue;
 		}
 	}
 	return 0;
