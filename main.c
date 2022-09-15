@@ -3,6 +3,9 @@
 int array[30000], z;
 unsigned int pos;
 
+int itoa(int number) {
+	return '0' + number;
+}
 int main() {
 	pos = 0;
 	while (getchar() != EOF) {
@@ -20,7 +23,7 @@ int main() {
 				pos++;
 				break;
 			case '.':
-				printf("%d", array[pos]);
+				printf("%d", itoa(array[pos]));
 				break;
 		}
 	}
